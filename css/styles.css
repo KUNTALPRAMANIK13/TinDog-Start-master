@@ -1,10 +1,26 @@
+body {
+  font-family: "Montserrat";
+}
 h1 {
   font-family: "Montserrat-Black", sans-serif;
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
 }
-
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+h3 {
+  font-family: "Montserrat-Bold";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+p {
+  color: #8f8f8f;
+}
 .container-fluid {
   padding: 3% 15% 7%;
 }
@@ -13,9 +29,7 @@ h1 {
 
   color: #fff;
 }
-body {
-  font-family: "Montserrat";
-}
+
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
@@ -36,27 +50,24 @@ body {
   margin: 5% 3% 5% 0;
 }
 .timg {
-  width: 60%;
+  width: 20%;
   transform: rotate(25deg);
-
+  /* z-index: -1; */
+  position: absolute;
+  right: 25%;
+  /* margin-left: 50px; */
 }
 #features {
-  padding: 7% 15%;
+  padding: 2% 4% 6%;
   background-color: #fff;
-
+  position: relative;
+  /* z-index: 1; */
 }
 .fbox {
   text-align: center;
   padding: 4.5%;
 }
-h3 {
-  font-family: "Montserrat-Bold";
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-p {
-  color: #8f8f8f;
-}
+
 .icon {
   color: #ef8172;
   margin-bottom: 1rem;
@@ -69,12 +80,7 @@ p {
   background-color: #ff4c68;
   color: #fff;
 }
-h2 {
-  font-family: "Montserrat-Bold";
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: bold;
-}
+
 .ts-img {
   width: 10%;
   border-radius: 100%;
@@ -84,7 +90,7 @@ h2 {
   background-color: #ff4c68;
   text-align: center;
   padding-bottom: 3%;
-} 
+}
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
@@ -98,4 +104,41 @@ h2 {
 }
 .pc {
   padding: 3% 2%;
+}
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .timg {
+    position: static;
+    transform: rotate(0);
+    width: 80%;
+    /* margin-left: 10px; */
+  }
+}
+/* @media (max-width: 1027px) {
+  .timg{
+    position: static;
+    transform: rotate(0);
+    width: 80%;
+  }
+} */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+.ctah {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+.sc {
+  margin: 20px 10px;
 }
